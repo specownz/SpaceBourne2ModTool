@@ -1,0 +1,65 @@
+﻿UE 4.27 / SpaceBourne 2 — PAK structure & content catalog
+=========================================================
+
+1) WHERE PAKS LOAD FROM
+   Engine auto-mounts *.pak from:
+     <Game>/SB2/Content/Paks/
+     Engine/Content/Paks/
+     Saved/Content/Paks/
+   Order: filename sort; names ending in _P are treated as patches
+   and override earlier entries for the same virtual path.
+
+2) MOUNT POINT
+   SB2 main pak mount: ../../../
+   Paths inside the pak are relative to the project root, e.g.:
+     SB2/Content/1Data/NPCs/...
+     Engine/Content/...
+     SB2/Config/DefaultGame.ini
+   Staging a mod must mirror those exact relative paths under
+   {Mod}_P/ then pack with UnrealPak -Create=response.txt -compress.
+
+3) VIRTUAL PATHS (/Game/ vs disk)
+   Editor / AssetRegistry uses:
+     /Game/...  →  ../../../SB2/Content/...
+     /Engine/... → ../../../Engine/Content/...
+   Example:
+     Pak path:  SB2/Content/Armors/Majorcharacters/B_Old_Lady/...
+     /Game/ path: /Game/Armors/Majorcharacters/B_Old_Lady/...
+   FModel shows both; when cooking replacements, keep the package
+   name and folder structure identical so references resolve.
+
+4) ASSET REGISTRY (content catalog)
+   Cooked games ship AssetRegistry.bin (seen as SB2/AssetRegistry.bin).
+   It is a serialized catalog of FAssetData for assets known at cook:
+     ObjectPath, PackageName, PackagePath, AssetName, AssetClass, tags.
+   The runtime AssetRegistry loads this instead of scanning the whole
+   filesystem. Pure file overrides via _P.pak still work for existing
+   package paths. Adding brand-new packages that the game must discover
+   by class/path query may also need registry awareness (harder without
+   official tools). Prefer overriding existing paths for SB2 mods.
+
+5) COOKED PACKAGE FILES
+   .uasset  — package summary + name/import/export maps
+   .uexp    — export payload (bulk of object data)
+   .ubulk   — optional large bulk (textures, etc.)
+   Always ship matching trios when present. Edit with UAssetGUI @ 4.27.
+
+6) COMPRESSION
+   SB2 uses Oodle heavily (also None, some Zlib). Pack mods with
+   UE 4.27 UnrealPak.exe and -compress.
+
+7) HIGH-VALUE SB2 CONTENT ROOTS (from analyzer)
+   1Data/NPCs          dialogs / NPC logic (~2832)
+   1Data/Quests        quest definitions
+   1Data/Weapons       weapon data
+   1Data/SB2Ships      ship/cockpit data
+   1Data/11_AI         behavior trees / blackboards
+   Armors/Majorcharacters  named character visuals (~1637)
+   Armors/1_New_sets       armor set meshes/textures
+   1Widgets, 1Meshs, 1Galaxy/Warp, Locomotion/MainChar
+
+8) TOOLCHAIN
+   FModel / CUE4Parse — browse & export
+   UAssetGUI / UAssetAPI — edit cooked uasset
+   UE 4.27 editor — import + Cook Content for Windows
+   UnrealPak 4.27 — create z_*_P.pak overrides

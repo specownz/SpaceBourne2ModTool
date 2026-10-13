@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SpaceBourne2ModTool</RootNamespace>
+    <AssemblyName>specSB2modTool</AssemblyName>
+    <ApplicationIcon>Resources\app.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GamePathDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GamePathDialog.Designer.cs">
+      <DependentUpon>GamePathDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LocalizationEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LocalizationEditorForm.Designer.cs">
+      <DependentUpon>LocalizationEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PakBrowserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PakBrowserForm.Designer.cs">
+      <DependentUpon>PakBrowserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TrainerConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TrainerConfigForm.Designer.cs">
+      <DependentUpon>TrainerConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModPackagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModPackagerForm.Designer.cs">
+      <DependentUpon>ModPackagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AutoDetectSplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AutoDetectSplashForm.Designer.cs">
+      <DependentUpon>AutoDetectSplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CodeEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CodeEditorForm.Designer.cs">
+      <DependentUpon>CodeEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AnalysisReportViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AnalysisReportViewerForm.Designer.cs">
+      <DependentUpon>AnalysisReportViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModWorkflowWizardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModWorkflowWizardForm.Designer.cs">
+      <DependentUpon>ModWorkflowWizardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModLoaderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModLoaderForm.Designer.cs">
+      <DependentUpon>ModLoaderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SpeckagePackagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SpeckagePackagerForm.Designer.cs">
+      <DependentUpon>SpeckagePackagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ObjectEditorHubForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ObjectEditorHubForm.Designer.cs">
+      <DependentUpon>ObjectEditorHubForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ObjectEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ObjectEditorForm.Designer.cs">
+      <DependentUpon>ObjectEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptEditorForm.Designer.cs">
+      <DependentUpon>ScriptEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SpecVertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SpecVertForm.Designer.cs">
+      <DependentUpon>SpecVertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModelViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModelViewerForm.Designer.cs">
+      <DependentUpon>ModelViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ImageViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ImageViewerForm.Designer.cs">
+      <DependentUpon>ImageViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModTemplateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModTemplateForm.Designer.cs">
+      <DependentUpon>ModTemplateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SteamModStudioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SteamModStudioForm.Designer.cs">
+      <DependentUpon>SteamModStudioForm.cs</DependentUpon>
+    </Compile>
+    
+    <Compile Include="Forms\LiveSessionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LiveSessionForm.Designer.cs">
+      <DependentUpon>LiveSessionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GitHubHubForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GitHubHubForm.Designer.cs">
+      <DependentUpon>GitHubHubForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HelpSectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HelpSectionForm.Designer.cs">
+      <DependentUpon>HelpSectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BeginnerHelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BeginnerHelpForm.Designer.cs">
+      <DependentUpon>BeginnerHelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScriptingStudioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScriptingStudioForm.Designer.cs">
+      <DependentUpon>ScriptingStudioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GameAnalyzerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ContentBrowserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ContentBrowserForm.Designer.cs">
+      <DependentUpon>ContentBrowserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LooseModForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LooseModForm.Designer.cs">
+      <DependentUpon>LooseModForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ConversionToolsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConversionToolsForm.Designer.cs">
+      <DependentUpon>ConversionToolsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GameAnalyzerForm.Designer.cs">
+      <DependentUpon>GameAnalyzerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\ModProject.cs" />
+    <Compile Include="Core\ModManager.cs" />
+    <Compile Include="Core\PakHelper.cs" />
+    <Compile Include="Core\LocalizationHelper.cs" />
+    <Compile Include="Core\TrainerTemplateGenerator.cs" />
+    <Compile Include="Core\ModdingPractices.cs" />
+    <Compile Include="Core\GameFileAnalyzer.cs" />
+    <Compile Include="Core\GameInsights.cs" />
+    <Compile Include="Core\AssetConversionHelper.cs" />
+    <Compile Include="Core\LooseModHelper.cs" />
+    <Compile Include="Core\ContentCatalog.cs" />
+    <Compile Include="Core\SafeDirectory.cs" />
+    <Compile Include="Core\ToolAutoDetector.cs" />
+    <Compile Include="Core\Ue4PakKnowledge.cs" />
+    <Compile Include="Core\AnalysisImporter.cs" />
+
+    <Compile Include="Models\ModInfo.cs" />
+    <Compile Include="Models\GameConfig.cs" />
+    <Compile Include="Models\TrainerOption.cs" />
+    <Compile Include="Models\GameAnalysisReport.cs" />
+    <Compile Include="Models\AnalysisProgress.cs" />
+
+    <Compile Include="Services\FileService.cs" />
+    <Compile Include="Services\ConfigService.cs" />
+    <Compile Include="Services\LoggerService.cs" />
+    <Compile Include="Utils\PathHelper.cs" />
+    <Compile Include="Utils\ProcessHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GamePathDialog.resx">
+      <DependentUpon>GamePathDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LocalizationEditorForm.resx">
+      <DependentUpon>LocalizationEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PakBrowserForm.resx">
+      <DependentUpon>PakBrowserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TrainerConfigForm.resx">
+      <DependentUpon>TrainerConfigForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModPackagerForm.resx">
+      <DependentUpon>ModPackagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AutoDetectSplashForm.resx">
+      <DependentUpon>AutoDetectSplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CodeEditorForm.resx">
+      <DependentUpon>CodeEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AnalysisReportViewerForm.resx">
+      <DependentUpon>AnalysisReportViewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModWorkflowWizardForm.resx">
+      <DependentUpon>ModWorkflowWizardForm.cs</DependentUpon>
+    </EmbeddedResource>
+        <EmbeddedResource Include="Forms\BeginnerHelpForm.resx">
+      <DependentUpon>BeginnerHelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+        <EmbeddedResource Include="Forms\ScriptingStudioForm.resx">
+      <DependentUpon>ScriptingStudioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ContentBrowserForm.resx">
+      <DependentUpon>ContentBrowserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LooseModForm.resx">
+      <DependentUpon>LooseModForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConversionToolsForm.resx">
+      <DependentUpon>ConversionToolsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GameAnalyzerForm.resx">
+      <DependentUpon>GameAnalyzerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
+  <ItemGroup>
+    <Content Include="Resources\app.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\spec.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\spec_128.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\AppBranding.cs" />
+    <Compile Include="Core\JsonLite.cs" />
+    <Compile Include="Core\SpecVertService.cs" />
+    <Compile Include="Core\SimpleMesh.cs" />
+    <Compile Include="Core\AnalyzerEnhancements.cs" />
+    <Compile Include="Core\CrossToolHub.cs" />
+        <Compile Include="Core\FormScaleHelper.cs" />
+    <Compile Include="Core\DialogueGrammarTool.cs" />
+    <Compile Include="Core\SteamModRequestHub.cs" />
+    <Compile Include="Core\ModTemplateService.cs" />
+    <Compile Include="Core\BeginnerGuide.cs" />
+    <Compile Include="Core\ScriptingTemplates.cs" />
+    <Compile Include="Core\Ue4ssProjectService.cs" />
+    <Compile Include="Core\HelpContent.cs" />
+    <Compile Include="Core\ScaffoldMergeService.cs" />
+    <Compile Include="Core\GitHub\GitHubModService.cs" />
+    <Compile Include="Core\GitHub\GitCli.cs" />
+    <Compile Include="Core\GitHub\GitHubApiClient.cs" />
+    <Compile Include="Core\GitHub\GitHubModels.cs" />
+    <Compile Include="Core\LiveSessionService.cs" />
+    <Compile Include="Core\UiTheme.cs" />
+    <Compile Include="Core\ModConvertService.cs" />
+    <Compile Include="Core\GameFingerprint.cs" />
+
+    <Compile Include="Core\UAssetApiBridge.cs" />
+    <Compile Include="Core\ScriptDocument.cs" />
+    <Compile Include="Core\GameObjectDocument.cs" />
+    <Compile Include="Core\CurrentModContext.cs" />
+    <Compile Include="SpecFramework\ModLoaderService.cs" />
+    <Compile Include="SpecFramework\SpeckagePack.cs" />
+    <Compile Include="SpecFramework\SpecPipeline.cs" />
+    <Compile Include="SpecFramework\SpeckageManifest.cs" />
+    <Compile Include="SpecFramework\PathGuard.cs" />
+    <Compile Include="Core\ExternalToolProbe.cs" />
+    <Compile Include="Core\AuthoringToolDetector.cs" />
+    <Compile Include="Core\ExternalToolLauncher.cs" />
+    <Compile Include="Core\ToolDownloadLinks.cs" />
+    <Compile Include="Core\RecentModsStore.cs" />
+    <Compile Include="Core\EveVoiceService.cs" />
+    <Compile Include="Core\AssetPreview.cs" />
+    <Compile Include="Core\WorkspaceHost.cs" />
+    <Compile Include="Core\WorkingProjectService.cs" />
+    <Compile Include="Core\GameUpdateDiff.cs" />
+    <Compile Include="Forms\EveVoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WorkingProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

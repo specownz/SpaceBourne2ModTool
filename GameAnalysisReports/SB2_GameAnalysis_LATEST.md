@@ -1,0 +1,225 @@
+﻿# SpaceBourne 2 – Deep Game Analysis v2.0.0
+
+- **Mount:** `../../../` | **Oodle:** True | **Monolithic:** True
+- **Lines parsed:** 85960
+
+## Compression
+- Oodle: 61578
+- None: 23300
+- Zlib: 1077
+
+## Extensions
+- `.uexp`: 36595
+- `.uasset`: 36366
+- `.ubulk`: 8674
+- `.res`: 3438
+- `.png`: 287
+- `.umap`: 234
+- `.uplugin`: 174
+- `.ini`: 56
+- `.locres`: 51
+- `.ufont`: 25
+- `.ttf`: 14
+- `.brk`: 12
+- `.locmeta`: 6
+- `.dict`: 5
+- `.icu`: 4
+- `.nrm`: 3
+- `.tps`: 3
+- `.bin`: 2
+- `.ushaderbytecode`: 2
+- `.cfu`: 1
+- `.uptnl`: 1
+- `.upluginmanifest`: 1
+- `.uproject`: 1
+
+## Path prefixes
+- `SB2/Content/`: 78184
+- `Engine/Content/`: 4770
+- `Engine/Plugins/`: 1834
+- `SB2/Plugins/`: 1141
+- `Engine/Config/`: 16
+- `SB2/Config/`: 7
+- `Engine/GlobalShaderCache-PCD3D_SM5.bin/`: 1
+- `SB2/AssetRegistry.bin/`: 1
+- `SB2/SB2.uproject/`: 1
+- `SB2/Content/1Data/`: 7649
+- `SB2/Content/Packes_L_D/`: 4816
+- `SB2/Content/Packes/`: 4203
+- `SB2/Content/Armors/`: 3907
+- `SB2/Content/1Meshs/`: 3658
+- `Engine/Content/Internationalization/`: 3463
+- `SB2/Content/Locomotion/`: 2624
+- `SB2/Content/11Misc/`: 2459
+- `SB2/Content/StarterBundle/`: 2288
+- `SB2/Content/1Galaxy/`: 1671
+- `SB2/Content/Indus/`: 1655
+- `SB2/Content/KB3D/`: 1526
+- `SB2/Content/_Textures/`: 1511
+- `SB2/Content/BallisticsVFX/`: 1331
+- `SB2/Content/CyberPunkMegapack/`: 1221
+- `SB2/Content/CyberpunkCity/`: 1217
+- `SB2/Content/1Widgets/`: 1183
+- `SB2/Content/FMOD/`: 1076
+- `SB2/Content/ScienceLab/`: 1061
+- `SB2/Content/SpaceStation/`: 976
+- `Engine/Plugins/Marketplace/`: 967
+- `SB2/Content/Brushify/`: 896
+- `SB2/Content/Recife_2050/`: 845
+- `SB2/Content/THEARCHIVE/`: 650
+- `SB2/Content/Chameleon/`: 643
+- `SB2/Content/ParagonProps/`: 609
+- `SB2/Content/ModSciInteriors/`: 591
+- `SB2/Content/JUPITER_SciFi_Kit/`: 572
+- `Engine/Plugins/FX/`: 516
+- `SB2/Content/Vx/`: 502
+- `SB2/Content/DesertDome/`: 484
+
+## Easy mod targets
+- LOOSE FMOD: 2 files on disk under Content/FMOD — bank/file replace may work without packing.
+- LOOSE MOVIES: 82 files on disk under Content/Movies — replace same filename for cutscene/trailer mods (no PAK needed).
+- MAJORCHAR B_Old_Lady (~212) — stage Armors/Majorcharacters/B_Old_Lady
+- MAJORCHAR N_GuzelWoman (~209) — stage Armors/Majorcharacters/N_GuzelWoman
+- MAJORCHAR N_OldEvil (~183) — stage Armors/Majorcharacters/N_OldEvil
+- MAJORCHAR N_Good_Boy (~176) — stage Armors/Majorcharacters/N_Good_Boy
+- MAJORCHAR N_Cinlii (~173) — stage Armors/Majorcharacters/N_Cinlii
+- MAJORCHAR N_GWomen (~173) — stage Armors/Majorcharacters/N_GWomen
+- MAJORCHAR N_Zayif (~173) — stage Armors/Majorcharacters/N_Zayif
+- MAJORCHAR N_RoboGirl (~165) — stage Armors/Majorcharacters/N_RoboGirl
+- MAJORCHAR Good_OldMan (~158) — stage Armors/Majorcharacters/Good_OldMan
+- MAJORCHAR Sister (~15) — stage Armors/Majorcharacters/Sister
+- QUEST Obsesif (~181) — stage 1Data/Quests/Obsesif
+- QUEST Datas (~46) — stage 1Data/Quests/Datas
+- QUEST 00_NewFirstThing.uasset (~1) — stage 1Data/Quests/00_NewFirstThing.uasset
+- QUEST 00_NewFirstThing.uexp (~1) — stage 1Data/Quests/00_NewFirstThing.uexp
+- QUEST 0_First_Thing_First.uasset (~1) — stage 1Data/Quests/0_First_Thing_First.uasset
+- QUEST 0_First_Thing_First.uexp (~1) — stage 1Data/Quests/0_First_Thing_First.uexp
+- QUEST 10_FreeLancersGuild.uasset (~1) — stage 1Data/Quests/10_FreeLancersGuild.uasset
+- QUEST 10_FreeLancersGuild.uexp (~1) — stage 1Data/Quests/10_FreeLancersGuild.uexp
+- QUEST 11_DraneBroken.uasset (~1) — stage 1Data/Quests/11_DraneBroken.uasset
+- QUEST 11_DraneBroken.uexp (~1) — stage 1Data/Quests/11_DraneBroken.uexp
+- QUEST 12_TheConstructer.uasset (~1) — stage 1Data/Quests/12_TheConstructer.uasset
+- QUEST 12_TheConstructer.uexp (~1) — stage 1Data/Quests/12_TheConstructer.uexp
+- CINEMATIC RadioAudio (~20) — stage 111Cinematic/RadioAudio
+- CINEMATIC Animation (~1) — stage 111Cinematic/Animation
+- CONFIG INI (~50 sampled) — stage SB2/Config or matching pak path
+- LOCRES (~60 sampled) — localization workflow
+- ARMORSET M_2 (~47) — stage Armors/1_New_sets/M_2
+- ARMORSET M_1 (~45) — stage Armors/1_New_sets/M_1
+- ARMORSET F_3 (~41) — stage Armors/1_New_sets/F_3
+- ARMORSET M_5 (~39) — stage Armors/1_New_sets/M_5
+- ARMORSET M_3 (~38) — stage Armors/1_New_sets/M_3
+- ARMORSET F_1 (~37) — stage Armors/1_New_sets/F_1
+- ARMORSET F_2 (~37) — stage Armors/1_New_sets/F_2
+- ARMORSET M_4 (~36) — stage Armors/1_New_sets/M_4
+- ARMORSET M_6 (~34) — stage Armors/1_New_sets/M_6
+- ARMORSET Vertex_1 (~2) — stage Armors/1_New_sets/Vertex_1
+- NPC DIALOGS (~2832) — stage 1Data/NPCs/Dialogs
+- PACKING: Oodle confirmed — use UE 4.27 UnrealPak -compress.
+- LAYOUT: Monolithic SB2-WindowsNoEditor.pak — mods must be z_*_P.pak.
+- MOUNT: ../../../
+- CATEGORY Texture: 30791 entries in sampled list
+- CATEGORY CookedAsset: 22755 entries in sampled list
+- CATEGORY Material: 12449 entries in sampled list
+- CATEGORY Mesh: 7416 entries in sampled list
+- CATEGORY Other: 3530 entries in sampled list
+- CATEGORY Audio: 3251 entries in sampled list
+- CATEGORY Animation: 1776 entries in sampled list
+- CATEGORY Blueprint: 1691 entries in sampled list
+- CATEGORY VFX: 1370 entries in sampled list
+- CATEGORY Map: 729 entries in sampled list
+- CATEGORY UI: 82 entries in sampled list
+- CATEGORY Localization: 60 entries in sampled list
+- CATEGORY Config: 53 entries in sampled list
+- CATEGORY Movie: 2 entries in sampled list
+- COOKED: 36595x .uexp — keep trio together; UAssetGUI 4.27.
+- COOKED: 36366x .uasset — keep trio together; UAssetGUI 4.27.
+- COOKED: 8674x .ubulk — keep trio together; UAssetGUI 4.27.
+- INI: 56x — config override candidates.
+- LOCRES: 51x — extract/edit/repack.
+- PREFIX: SB2/Content/* (78184)
+- PREFIX: Engine/Content/* (4770)
+- PREFIX: Engine/Plugins/* (1834)
+- PREFIX: SB2/Plugins/* (1141)
+- PREFIX: Engine/Config/* (16)
+- PREFIX: SB2/Config/* (7)
+- PREFIX: Engine/GlobalShaderCache-PCD3D_SM5.bin/* (1)
+- PREFIX: SB2/AssetRegistry.bin/* (1)
+- PREFIX: SB2/SB2.uproject/* (1)
+- PREFIX: SB2/Content/1Data/* (7649)
+- PREFIX: SB2/Content/Packes_L_D/* (4816)
+- PREFIX: SB2/Content/Packes/* (4203)
+- PREFIX: SB2/Content/Armors/* (3907)
+- PREFIX: SB2/Content/1Meshs/* (3658)
+- PREFIX: Engine/Content/Internationalization/* (3463)
+- PREFIX: SB2/Content/Locomotion/* (2624)
+- PREFIX: SB2/Content/11Misc/* (2459)
+- PREFIX: SB2/Content/StarterBundle/* (2288)
+- PREFIX: SB2/Content/1Galaxy/* (1671)
+- PREFIX: SB2/Content/Indus/* (1655)
+- GAME EXAMPLE: SB2/AssetRegistry.bin
+- LOC EXAMPLE: Engine/Content/Localization/Engine/en/Engine.locres
+- INJECTION: File-level mods via _P pak override; runtime via CE on SB2-Win64-Shipping.exe.
+- VARIABLES: No reflection dump here — use UE4SS / CE structure tools for live UObject fields.
+- SCRIPT DIALOGS: Cooked under 1Data/NPCs/Dialogs/<NPC>/ — Script Editor organizes by NPC; full text via FModel+UAssetGUI 4.27.
+- SCRIPT QUESTS: 1Data/Quests/<Name>/ — document stages in Script Editor; pack path overrides.
+- OBJECTS: Use Object Editors hub for NPC/Dialog/Quest/Character/Armor/Ship modular docs → import staging.
+- UE427 API: AssetRegistry resolves existing paths; new packages may need registry-aware placement. Mount ../../../ .
+- UE427 PATCH: Highest priority patch paks are z_*_P.pak after base name sort; Oodle via Engine 4.27 UnrealPak -compress.
+- GAMEPLAY Engine (~359 path hits) — candidate for value/asset override mods.
+- GAMEPLAY Dialog (~16 path hits) — candidate for value/asset override mods.
+- GAMEPLAY Weapon (~15 path hits) — candidate for value/asset override mods.
+- GAMEPLAY Gun (~6 path hits) — candidate for value/asset override mods.
+- GAMEPLAY Station (~3 path hits) — candidate for value/asset override mods.
+
+## Sample game paths
+- `SB2/AssetRegistry.bin`
+- `SB2/Config/DefaultDeviceProfiles.ini`
+- `SB2/Config/DefaultEngine.ini`
+- `SB2/Config/DefaultEvents.ini`
+- `SB2/Config/DefaultGame.ini`
+- `SB2/Config/DefaultGameplayTags.ini`
+- `SB2/Config/DefaultInput.ini`
+- `SB2/Config/LoggingOverride.ini`
+- `SB2/Content/111Cinematic/AI.uasset`
+- `SB2/Content/111Cinematic/AI.uexp`
+- `SB2/Content/111Cinematic/Amara.uasset`
+- `SB2/Content/111Cinematic/Amara.uexp`
+- `SB2/Content/111Cinematic/Ambient_1_-_Hollow_Forest.uasset`
+- `SB2/Content/111Cinematic/Ambient_1_-_Hollow_Forest.uexp`
+- `SB2/Content/111Cinematic/Animation/JackTest2.uasset`
+- `SB2/Content/111Cinematic/Animation/JackTest2.uexp`
+- `SB2/Content/111Cinematic/Animation/JackTest2_Montage1.uasset`
+- `SB2/Content/111Cinematic/Animation/JackTest2_Montage1.uexp`
+- `SB2/Content/111Cinematic/Animation/Volken2.uasset`
+- `SB2/Content/111Cinematic/Animation/Volken2.uexp`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim11_1.uasset`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim11_1.uexp`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim11_1_Montage.uasset`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim11_1_Montage.uexp`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim3.uasset`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim3.uexp`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim3_2.uasset`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim3_2.uexp`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim3_2_Montage.uasset`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim3_2_Montage.uexp`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim3_Montage.uasset`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim3_Montage.uexp`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim5_1.uasset`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim5_1.uexp`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim5_1_Montage.uasset`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim5_1_Montage.uexp`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim7_1.uasset`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim7_1.uexp`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim7_1_Montage.uasset`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim7_1_Montage.uexp`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim8_1.uasset`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim8_1.uexp`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim8_1_Montage.uasset`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim8_1_Montage.uexp`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim9_2.uasset`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim9_2.uexp`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim9_2_Montage.uasset`
+- `SB2/Content/111Cinematic/Animation/Volken_TunaFaceAnim9_2_Montage.uexp`
+- `SB2/Content/111Cinematic/AsteroidStationLevelT.uexp`
+- `SB2/Content/111Cinematic/AsteroidStationLevelT.umap`

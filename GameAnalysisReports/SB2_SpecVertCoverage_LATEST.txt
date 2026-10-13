@@ -1,0 +1,23 @@
+﻿SB2_SpecVertCoverage_LATEST.txt
+Generated: 2026-09-29T17:22:06.6291086Z
+
+specvert:Materials = 5780 related signals
+specvert:Meshes = 5711 related signals
+specvert:Widgets = 1749 related signals
+specvert:Galaxy = 867 related signals
+specvert:Vfx = 850 related signals
+specvert:Armor = 750 related signals
+specvert:Locomotion = 705 related signals
+specvert:Packes = 694 related signals
+specvert:Audio = 643 related signals
+specvert:Weapons = 337 related signals
+specvert:Quests = 254 related signals
+specvert:Generic = 198 related signals
+specvert:Dialogs = 137 related signals
+specvert:Characters = 117 related signals
+specvert:Ships = 112 related signals
+specvert:Items = 20 related signals
+specvert:Config = 11 related signals
+specvert:Movies = 6 related signals
+specvert:Cinematics = 1 related signals
+specvert:_hint = Low signals → re-run deep pak list or expand FModel browse under that module.

@@ -1,0 +1,48 @@
+﻿LOOSE FMOD: 2 files on disk under Content/FMOD — bank/file replace may work without packing.
+LOOSE MOVIES: 82 files on disk under Content/Movies — replace same filename for cutscene/trailer mods (no PAK needed).
+PACKING: Oodle confirmed — use UE 4.27 UnrealPak -compress.
+LAYOUT: Monolithic SB2-WindowsNoEditor.pak — mods must be z_*_P.pak.
+MOUNT: ../../../
+CATEGORY Texture: 30791 entries in sampled list
+CATEGORY CookedAsset: 22755 entries in sampled list
+CATEGORY Material: 12449 entries in sampled list
+CATEGORY Mesh: 7416 entries in sampled list
+CATEGORY Other: 3530 entries in sampled list
+CATEGORY Audio: 3251 entries in sampled list
+CATEGORY Animation: 1776 entries in sampled list
+CATEGORY Blueprint: 1691 entries in sampled list
+CATEGORY VFX: 1370 entries in sampled list
+CATEGORY Map: 729 entries in sampled list
+CATEGORY UI: 82 entries in sampled list
+CATEGORY Localization: 60 entries in sampled list
+CATEGORY Config: 53 entries in sampled list
+CATEGORY Movie: 2 entries in sampled list
+COOKED: 36595x .uexp — keep trio together; UAssetGUI 4.27.
+COOKED: 36366x .uasset — keep trio together; UAssetGUI 4.27.
+COOKED: 8674x .ubulk — keep trio together; UAssetGUI 4.27.
+INI: 56x — config override candidates.
+LOCRES: 51x — extract/edit/repack.
+PREFIX: SB2/Content/* (78184)
+PREFIX: Engine/Content/* (4770)
+PREFIX: Engine/Plugins/* (1834)
+PREFIX: SB2/Plugins/* (1141)
+PREFIX: Engine/Config/* (16)
+PREFIX: SB2/Config/* (7)
+PREFIX: Engine/GlobalShaderCache-PCD3D_SM5.bin/* (1)
+PREFIX: SB2/AssetRegistry.bin/* (1)
+PREFIX: SB2/SB2.uproject/* (1)
+PREFIX: SB2/Content/1Data/* (7649)
+PREFIX: SB2/Content/Packes_L_D/* (4816)
+PREFIX: SB2/Content/Packes/* (4203)
+PREFIX: SB2/Content/Armors/* (3907)
+PREFIX: SB2/Content/1Meshs/* (3658)
+PREFIX: Engine/Content/Internationalization/* (3463)
+PREFIX: SB2/Content/Locomotion/* (2624)
+PREFIX: SB2/Content/11Misc/* (2459)
+PREFIX: SB2/Content/StarterBundle/* (2288)
+PREFIX: SB2/Content/1Galaxy/* (1671)
+PREFIX: SB2/Content/Indus/* (1655)
+GAME EXAMPLE: SB2/AssetRegistry.bin
+LOC EXAMPLE: Engine/Content/Localization/Engine/en/Engine.locres
+INJECTION: File-level mods via _P pak override; runtime via CE on SB2-Win64-Shipping.exe.
+VARIABLES: No reflection dump here — use UE4SS / CE structure tools for live UObject fields.

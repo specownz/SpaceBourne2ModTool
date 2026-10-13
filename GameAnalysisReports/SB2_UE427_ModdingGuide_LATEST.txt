@@ -1,0 +1,25 @@
+﻿specSB2modTool — UE 4.27 Modding Practice Guide (SB2-focused)
+Mount: ../../../ | Oodle: True | Monolithic: True
+
+• SB2 is cooked UE 4.27 with a monolithic Oodle-compressed PAK and mount ../../../.
+• Use UnrealPak from UE 4.27 only — wrong builds fail on Oodle or -List format.
+• FModel/CUE4Parse: set engine version to 4.27 before opening the main PAK.
+• UAssetGUI: select UE 4.27 serialization; keep matching .uexp with every .uasset.
+• Patch priority: later z_*_P.pak wins for the same virtual path.
+• AssetRegistry.bin catalogs assets — prefer overriding existing ObjectPaths.
+• Response file: "C:\\abs\\file.uasset" "../../../SB2/Content/relative/file.uasset"
+• Loose Movies/FMOD on disk need no PAK — use Loose File Mods with backup.
+• Config INI under SB2/Config can be staged and packed for careful gameplay tweaks.
+• Localization: extract .locres, edit with locres tools, repack same path.
+• Do not casually replace GlobalShaderCache / ushaderbytecode.
+• Marketplace pack content is normal cooked Content — path overrides still apply.
+• Always pack mods with -compress on UE 4.27 UnrealPak (Oodle-dominant base).
+• Never rebuild the multi-GB base pak — ship small z_*_P.pak overrides only.
+
+=== Community UE4.27 patterns that apply ===
+• ~mods or z_ prefix pak naming for load order control
+• Never strip .uexp when shipping .uasset overrides
+• Test one package at a time; crashes often mean version mismatch or incomplete trio
+• Keep response file UTF-8 without BOM when possible
+• For Sig/encryption games this workflow differs — SB2 remains unencrypted (no AES key)
+• Blueprint cooked assets are editable only in limited ways via UAssetGUI; logic-heavy changes prefer data assets the game already reads

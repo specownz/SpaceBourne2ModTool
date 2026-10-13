@@ -1,0 +1,7 @@
+﻿specSB2modTool — Cooked Asset Health / Trio Notes
+uasset=36366 uexp=36595 ubulk=8674 umap=234 uplugin=174 ini=56 locres=51
+
+• uasset/uexp count delta=229 (uasset=36366 uexp=36595).
+• ubulk=8674 umap=234 uplugin=174 ini=56 locres=51
+• Sampled .uasset paths: 145. Stage matching .uexp (+ .ubulk when present).
+• Mod PAK naming: z_<Name>_P.pak — mount ../../../ — override existing package paths.

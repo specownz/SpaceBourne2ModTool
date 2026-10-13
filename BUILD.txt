@@ -1,0 +1,6 @@
+FIXED-20261013-1408
+About 620 KB. If a download is about 19 MB, it is an old copy.
+Auto-detect lists folders without throwing UnauthorizedAccessException.
+Analyzer tool version 2.2.0. Pak list line cap is off.
+New scaffolds: 1CCG cards, DLC quest voices, News UI, main menu kit, RPG curves, diplomacy.
+MainForm.cs line 714: btn.Location = new Point(0, y); // FIXED-20261013-1402

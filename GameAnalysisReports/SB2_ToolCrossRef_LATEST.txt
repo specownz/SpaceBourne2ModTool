@@ -1,0 +1,67 @@
+﻿specSB2modTool — External Tool Cross-Reference
+Generated: 2026-09-29T17:22:06.6291086Z
+
+=== External tool probe ===
+[OK] UnrealPak.exe (UE 4.27)
+     Path: C:\Program Files\Epic Games\UE_4.27\Engine\Binaries\Win64\UnrealPak.exe
+     Version: 138208 bytes, 2026-07-19
+     Present — prefer Engine build from UE 4.27 for SB2 Oodle PAKs.
+     + UnrealPak -List <pak>
+     + UnrealPak <out.pak> -Create=response.txt -compress
+     + Extract with -Extract (when needed)
+     + Path suggests UE 4.27 — good match for SB2
+
+[OK] FModel
+     Path: C:\dev\FModel.exe
+     Version: 4.4.4.0
+     Present.
+     + List packages
+     + Export raw uasset/uexp/ubulk
+     + UE version profiles
+     - Does not pack PAKs
+     - Set UE 4.27 profile for SB2
+
+[OK] UModel
+     Path: C:\dev\umodel.exe
+     Version: 1468928 bytes, 2026-09-28
+     Present.
+     + Mesh/texture preview
+     + Batch export
+     - Not for arbitrary property edit
+     - Pair with UAssetGUI for package edits
+
+[OK] UAssetGUI
+     Path: C:\dev\UAssetGUI.exe
+     Version: 1.1.0.0
+     Present.
+     + Name map / exports view
+     + Property edit on many types
+     - Must match UE 4.27 serialization
+     - Always keep matching .uexp
+
+--- recommended pipelines ---
+• Full cooked override: FModel export → UAssetGUI edit (or UE 4.27 re-cook) → stage SB2/Content/... → UnrealPak -Create=response.txt -compress → z_*_P.pak
+• Loose-only path (no tools required beyond Explorer): replace Content/Movies/*.mp4 or Content/FMOD/*.bank with backups via Loose File Mods.
+• New mesh/texture content: author in UE 4.27 editor → Cook Content for Windows → copy cooked trio into mod staging → UnrealPak.
+• Localization: extract .locres from PAK (FModel or UnrealPak extract) → community locres text tools → rebuild → _P.pak under same path.
+• Prefer overriding existing package paths so AssetRegistry.bin still resolves assets; brand-new packages may not be discovered by class queries.
+
+
+=== How tools map to SB2 mod tasks ===
+List/map PAK          → UnrealPak -List
+Browse/export asset   → FModel (UE 4.27)
+Edit cooked package   → UAssetGUI (4.27) or re-cook in Editor
+Create patch PAK      → UnrealPak -Create=response.txt -compress
+Preview mesh/texture  → UModel
+Loose movie/audio     → Loose File Mods (no UnrealPak)
+Localization          → extract locres + text tools + repack
+
+=== Workflow recommendations ===
+• Full cooked override: FModel export → UAssetGUI edit (or UE 4.27 re-cook) → stage SB2/Content/... → UnrealPak -Create=response.txt -compress → z_*_P.pak
+• Loose-only path (no tools required beyond Explorer): replace Content/Movies/*.mp4 or Content/FMOD/*.bank with backups via Loose File Mods.
+• New mesh/texture content: author in UE 4.27 editor → Cook Content for Windows → copy cooked trio into mod staging → UnrealPak.
+• Localization: extract .locres from PAK (FModel or UnrealPak extract) → community locres text tools → rebuild → _P.pak under same path.
+• Prefer overriding existing package paths so AssetRegistry.bin still resolves assets; brand-new packages may not be discovered by class queries.
+
+=== Cross-ref notes ===
+• All primary tools present — analyzer can recommend complete pipelines.

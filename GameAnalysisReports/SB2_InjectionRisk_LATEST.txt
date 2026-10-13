@@ -1,0 +1,10 @@
+﻿SB2_InjectionRisk_LATEST.txt
+Generated: 2026-09-29T17:22:06.6291086Z
+
+risk:base_pak = Never replace WindowsNoEditor / primary non-_P chunks unless AllowVanillaCoreEdits + backup.
+risk:oodie = Oodle compression — pack with UnrealPak 4.27 only.
+risk:io_store = No IoStore flag — classic PAK override path preferred.
+risk:monolith = Large monolithic pak — only ship small z_*_P.pak diffs.
+risk:uexp = Always stage .uasset+.uexp(+.ubulk) together; incomplete trios crash loads.
+risk:mount = Mount point typically ../../../ with staged SB2/Content/...
+risk:pak_counts = baseish=1 patchlike=0

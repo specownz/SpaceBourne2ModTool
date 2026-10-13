@@ -1,0 +1,4 @@
+﻿SB2_ConfigLoc_LATEST.txt
+Generated: 2026-09-29T17:22:06.6291086Z
+
+cfgloc:none = No loose ini/locres found under standard roots (may be pak-only).

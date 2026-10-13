@@ -1,0 +1,7 @@
+﻿SpaceBourne 2 game fingerprint
+GeneratedUtc=2026-09-29T17:22:20.9297902Z
+Fingerprint=v1|72a6cfd15e242a479467f943de5bbb2e578dce3eb1f043dea1ac6185dcf4727a|paks=1
+
+This value is stored with mods. When the game updates, package archive
+sizes or dates change and the fingerprint changes. Use
+"Convert mod to current game files" to refresh a mod against a new scan.

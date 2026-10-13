@@ -1,0 +1,13 @@
+﻿SB2_LoadOrderBands_LATEST.txt
+Generated: 2026-09-29T17:22:06.6291086Z
+
+loadorder:10 = Core fixes / crash patches
+loadorder:20 = Config & localization
+loadorder:30 = DataTables / balance numbers
+loadorder:40 = Meshes materials textures
+loadorder:50 = Characters armor sets
+loadorder:60 = UI widgets
+loadorder:70 = Audio FMOD
+loadorder:80 = Movies cinematics
+loadorder:90 = Quest dialog narrative
+loadorder:99 = Personal overrides (last wins)

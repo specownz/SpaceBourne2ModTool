@@ -1,0 +1,93 @@
+﻿LOOSE_FILES_ON_DISK (outside main pak — easiest mods)
+Generated: 2026-09-27T18:59:56.5085661Z
+
+== FMOD (2 files, 118.23 MB) ==
+  ext .bank x2
+    FMOD/Desktop/Master.bank 123949344
+    FMOD/Desktop/Master.strings.bank 20382
+
+== Movies (82 files, 1.41 GB) ==
+  ext .mp4 x82
+    Movies/Activeperks.mp4 5999850
+    Movies/ArchiveCinematic_Final.mp4 158278242
+    Movies/BattleTutorial.mp4 46873055
+    Movies/Buildstructure.mp4 2400022
+    Movies/BuildStructures.mp4 3597094
+    Movies/Capitalshipspart1.mp4 14483203
+    Movies/Capitalshipspart2.mp4 34881728
+    Movies/Capital_Tutorial_mp4.mp4 21333433
+    Movies/Castle Siege Final_mp4.mp4 25220068
+    Movies/Castle Siege UI Tutorial_mp4.mp4 19508389
+    Movies/Castle Siege_During Battle.mp4 35982821
+    Movies/Castlesiegepart1.mp4 1645260
+    Movies/Castlesiegepart2.mp4 15574208
+    Movies/Castlesiegepart3.mp4 14378078
+    Movies/CharacterPerks.mp4 17362951
+    Movies/CombatBasics.mp4 13701313
+    Movies/Crew.mp4 16355666
+    Movies/Crewmanagement.mp4 2745628
+    Movies/Defendsystems.mp4 4929514
+    Movies/Diplomacy.mp4 1858901
+    Movies/Diplomacynew.mp4 1449404
+    Movies/DNA.mp4 4517070
+    Movies/Drifting.mp4 10117346
+    Movies/Enteringplanet.mp4 10345300
+    Movies/Factionbasics.mp4 1899196
+    Movies/Factionbattlespart1.mp4 2764979
+    Movies/Factionbattlespart2.mp4 17677496
+    Movies/Factionbattlespart3.mp4 15162122
+    Movies/FullHDLongStartup.mp4 8399274
+    Movies/GravityBoots.mp4 12371077
+    Movies/HotasTut.mp4 8793757
+    Movies/Hoverbike.mp4 11574493
+    Movies/Insystemtravelpart1.mp4 8338054
+    Movies/Insystemtravelpart2.mp4 5409457
+    Movies/Jumpingsectorsystem.mp4 9704293
+    Movies/Landinganddocking.mp4 10676940
+    Movies/Leveling.mp4 21579883
+    Movies/Loots.mp4 3777598
+    Movies/Managingcomponents.mp4 4079790
+    Movies/Menu_Background.mp4 30215775
+    Movies/Missilesandtorpedoes.mp4 8423512
+    Movies/Page1.mp4 26801293
+    Movies/Page2.mp4 14254259
+    Movies/Page3.mp4 39819821
+    Movies/Page4.mp4 47340037
+    Movies/Page5.mp4 8345512
+    Movies/Page6.mp4 17739727
+    Movies/Page7.mp4 115526243
+    Movies/PErks.mp4 15723995
+    Movies/Plunder1.mp4 14290422
+    Movies/Podding.mp4 10226377
+    Movies/Powermanagement.mp4 2324504
+    Movies/Pursuitmode.mp4 61210574
+    Movies/RaidCapture.mp4 14439269
+    Movies/RaidrGen1.mp4 26580008
+    Movies/Raids.mp4 4751644
+    Movies/Rockets.mp4 19403764
+    Movies/Scannerprobespart1.mp4 7197413
+    Movies/Scannerprobespart2.mp4 3762945
+    Movies/Scannerprobespart3.mp4 3818154
+    Movies/Scannerprobespart4.mp4 6491401
+    Movies/Scannerprobespart5.mp4 2857370
+    Movies/Scannerprobespart6.mp4 7968500
+    Movies/ShipManager.mp4 5967195
+    Movies/Shipperks.mp4 7022546
+    Movies/SlumsIntro.mp4 73475474
+    Movies/Space War RTS Tutorial_mp4.mp4 36698570
+    Movies/space war UI_mp4.mp4 30834361
+    Movies/Squadmanager.mp4 11777328
+    Movies/Stargate.mp4 38408106
+    Movies/StarupVidep.mp4 267803
+    Movies/Station War_mp4.mp4 24516233
+    Movies/Summonship.mp4 3104494
+    Movies/Swarmtutorial1.mp4 7832739
+    Movies/Swarmtutorial2.mp4 13232799
+    Movies/TradeMecVideo.mp4 38245407
+    Movies/TradeVideo.mp4 15495570
+    Movies/Travelingbasics.mp4 6942490
+    Movies/Travellingonsurface.mp4 17288425
+    Movies/Tutorail1.mp4 15091054
+    Movies/Usingstargates.mp4 20455943
+    Movies/WeaponGroups.mp4 8542008
+

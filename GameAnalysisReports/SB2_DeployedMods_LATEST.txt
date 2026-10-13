@@ -1,0 +1,5 @@
+﻿SB2_DeployedMods_LATEST.txt
+Generated: 2026-09-29T17:22:06.6291086Z
+
+deployed:0 = BASE  SB2-WindowsNoEditor.pak size=11738588373 mtime=2026-09-26T15:11:53.0941861Z
+deployed:summary = Listed up to 80 paks — PATCH entries are existing overrides to coordinate load order with.

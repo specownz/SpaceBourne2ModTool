@@ -1,0 +1,15 @@
+﻿SB2_PipelineHints_LATEST.txt
+Generated: 2026-09-29T17:22:06.6291086Z
+
+pipeline:textures = FModel export PNG → edit → UE4.27 import/cook → stage trio → z_*_P.pak
+pipeline:materials = UAssetGUI 4.27 on MI_/Mat_ packages; keep parent material refs valid.
+pipeline:meshes = UModel preview OBJ; replace skeletal carefully (skeleton compatibility).
+pipeline:dialog = Script Editor stubs + UAssetGUI string props under Dialogs/<NPC>/.
+pipeline:quest = Quest data under 1Data/Quests; document stages in Object Editor Quest type.
+pipeline:audio = Loose FMOD Desktop banks if on disk; else pack banks matching paths.
+pipeline:movies = Loose Content/Movies mp4 same filename — easiest visual mod.
+pipeline:ui = WBP_/UMG packages via UAssetGUI; test resolution scaling.
+pipeline:datatable = DT_ assets strong for balance numbers if present in namepat.
+pipeline:config = SB2/Config ini overrides when loose config exists; else Engine.ini is risky.
+pipeline:live = Optional UE4SS for runtime only — not a substitute for file mods.
+pipeline:injection = Mod Loader managed z_<order>_*_P.pak only; PathGuard blocks vanilla unless setting enabled.
